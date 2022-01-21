@@ -80,7 +80,6 @@ const UPDATE_TODO = gql`
                 <tr>
                   <th>Current Value</th>
                   <th>New Value</th>      
-                  <th>Changing Value</th>
                   <th></th>
                   <th></th>
                 </tr>
@@ -96,9 +95,6 @@ const UPDATE_TODO = gql`
                       />
                     </td>
                     <td>
-                      {input}
-                    </td>
-                    <td>
                       <button type='submit' className='updB' onClick={(e) => handleSubmit(e, id, type)}>Update</button>
                     </td>
                     <td>
@@ -110,7 +106,7 @@ const UPDATE_TODO = gql`
               </tbody>
               <tfoot>
                 <tr>
-                  <td colspan='5'>
+                  <td colspan='4'>
                     <b>Messages: </b>
                     {message}
             
